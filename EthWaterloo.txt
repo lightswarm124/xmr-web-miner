@@ -1,0 +1,12 @@
+Title: Web Browser Crypto Mining
+
+
+Goal: Mine cryptocurrencies while browsing web pages
+
+Objectives: 1) User-controlled mining parameters
+            2) Allocate mining power & profit sharing
+            3) Provide incentives for web hosts & users
+
+Strategies: 1) Premium experience for top mining contributors
+            2) Extend transaction script access & functionality
+            3) Control spam flood with computing work
