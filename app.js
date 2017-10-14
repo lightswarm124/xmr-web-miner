@@ -10,15 +10,8 @@ const CoinHive = require('coin-hive');
 
     // Listen on events
     miner.on('found', () => console.log('Found!'));
-    miner.on('accepted', (data) => {
-        if (data.acceptedHashes > 50) {
-            miner.stop();
-            console.log('Finished Mining');
-        } else {
-            console.log('Accepted!');
-        }
-    });
-    miner.on('update', data => {
+    miner.on('accepted', () => console.log('Accepted!'));
+    miner.on('update', (data) => {
         if (data.acceptedHashes > 257) {
             miner.stop();
             console.log('Finished Mining');
