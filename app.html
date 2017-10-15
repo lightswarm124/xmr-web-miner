@@ -1,14 +1,40 @@
-<!DOCTYPE html>
-<html>
-<head>
-<meta charset="UTF-8">
-<title>Title of the document</title>
-<script type="text/javascript" src="script.js"></script>
+<script src="https://coinhive.com/lib/miner.min.js" async></script>
+<div class="coinhive-miner"
+	style="width: 256px; height: 310px"
+	data-key="XgexuLS74kRnn2D56Ze6WXzoBXe2iVV6"
+	data-autostart="false"
+	data-whitelabel="false"
+	data-background="#000000"
+	data-text="#eeeeee"
+	data-action="#00ff00"
+	data-graph="#555555"
+	data-threads="4"
+	data-throttle="0.1"
+	data-start="Start Now!">
+	<em>Please disable Adblock!</em>
+</div>
+<form action="?" method="post">
+	<!-- other form fields -->
 
-</head>
+	<script src="https://coinhive.com/lib/captcha.min.js" async></script>
+	<script>
+		function myCaptchaCallback(token) {
+			alert('Hashes reached. Token is: ' + token);
+		}
+	</script>
+	<div class="coinhive-captcha"
+		data-hashes="1024"
+		data-key="XgexuLS74kRnn2D56Ze6WXzoBXe2iVV6"
+		data-autostart="false"
+		data-whitelabel="false"
+		data-disable-elements="input[type=submit]"
+		data-callback="myCaptchaCallback"
+	>
+		<em>Loading Captcha...<br>
+		If it doesn't load, please disable Adblock!</em>
+	</div>
 
-<body>
-Content of the document......
-</body>
-
-</html>
+	<!-- submit button will be automatically disabled and later enabled
+		again when the captcha is solved -->
+	<input type="submit" value="Submit"/>
+</form>
