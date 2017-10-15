@@ -1,9 +1,9 @@
-Title: Web Browser Crypto Mining
+Title: Web Browser Monero Mining
 
 
 Goal: Mine cryptocurrencies while browsing web pages
 
-Objectives: 1) User-controlled mining parameters
+Objectives: 1) Give users control of mining parameters
             2) Allocate mining power & profit sharing
             3) Provide incentives for web hosts & users
 
